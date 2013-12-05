@@ -4,7 +4,7 @@ class ItemCategory < ActiveRecord::Base
   # validates_presence_of :name
   # validates :storage_type, :inclusion => { :in => %w(slot pocket coin gem)}
 
-  has_many :items#, order: 'sequence desc', conditions: 'hide=0'
+  has_many :items#
 
   # alias_attribute :name_en, :name
   # alias_attribute :description_en, description
